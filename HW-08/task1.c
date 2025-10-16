@@ -8,7 +8,7 @@ void main()
 {
     setlocale(LC_ALL, "RUS");
     double p = 1;
-    printf("Вычисление произведения (1 + sin(0.1)) * (1 + sin(0.2)) * ... * (1 + sin(10))\n\n");
+    printf("Р’С‹С‡РёСЃР»РµРЅРёРµ РїСЂРѕРёР·РІРµРґРµРЅРёСЏ (1 + sin(0.1)) * (1 + sin(0.2)) * ... * (1 + sin(10))\n\n");
     
     for (double x = 0.1; x <= 10.0; x += 0.1) 
     {
@@ -16,7 +16,7 @@ void main()
         p = t;
     }
 
-    printf("\nPезультат: %.4f\n", p);
+    printf("\nPРµР·СѓР»СЊС‚Р°С‚: %.4f\n", p);
     return 0;
     system("pause");
 }
