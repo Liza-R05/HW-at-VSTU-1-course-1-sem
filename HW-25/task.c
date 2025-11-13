@@ -4,7 +4,7 @@
 #include <locale.h>
 #include <time.h>
 
-// заполнение массива случайными числами от -1 до 1
+// Р·Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё РѕС‚ -1 РґРѕ 1
 double* full_elements(double* ptr_array, int n) 
 {
     for (int i = 0; i < n; i++) 
@@ -14,7 +14,7 @@ double* full_elements(double* ptr_array, int n)
     return ptr_array;
 }
 
-// печать элементов массива
+// РїРµС‡Р°С‚СЊ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 int put_elements(double* ptr_array, int n) 
 {
     for (int i = 0; i < n; i++) 
@@ -24,7 +24,7 @@ int put_elements(double* ptr_array, int n)
     return n;
 }
 
-// реверс элементов массива
+// СЂРµРІРµСЂСЃ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 double* reverse_array(double* start, double* end, int* new_size) 
 {
     int size = end - start + 1;
@@ -48,7 +48,7 @@ void main()
     setlocale(LC_ALL, "RUS");
     srand(time(NULL));
     int n = 10 + rand() % 41;
-    // заполнение массива, выд. память
+    // Р·Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР°, РІС‹Рґ. РїР°РјСЏС‚СЊ
     double* a = (double*)malloc(n * sizeof(double));
     if (a == NULL) 
     {
@@ -56,7 +56,7 @@ void main()
         return -1;
     }
     full_elements(a, n);
-    // реверс. массива
+    // СЂРµРІРµСЂСЃ. РјР°СЃСЃРёРІР°
     int new_size;
     double* revers = reverse_array(&a[0], &a[n - 1], &new_size);
     if (revers == NULL) 
@@ -65,9 +65,9 @@ void main()
         free(a);
         return -1;
     }
-    printf("Исходный массив (%d элементов):\n", n);
+    printf("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ (%d СЌР»РµРјРµРЅС‚РѕРІ):\n", n);
     put_elements(a, n);
-    printf("\nРеверсированный массив (%d элементов):\n", new_size);
+    printf("\nР РµРІРµСЂСЃРёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ (%d СЌР»РµРјРµРЅС‚РѕРІ):\n", new_size);
     put_elements(revers, new_size);
     free(a);
     free(revers);
