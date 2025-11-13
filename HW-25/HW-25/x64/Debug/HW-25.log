@@ -1,0 +1,6 @@
+﻿  task.c
+C:\Users\Lenta_SV\OneDrive\Desktop\ВУЗ no shkola\прога\HW-25\task.c(30,28): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\Lenta_SV\OneDrive\Desktop\ВУЗ no shkola\прога\HW-25\task.c(49,11): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Lenta_SV\OneDrive\Desktop\ВУЗ no shkola\прога\HW-25\task.c(56,9): warning C4098: main: функция типа "void", возвращающая значение
+C:\Users\Lenta_SV\OneDrive\Desktop\ВУЗ no shkola\прога\HW-25\task.c(66,9): warning C4098: main: функция типа "void", возвращающая значение
+  HW-25.vcxproj -> C:\Users\Lenta_SV\OneDrive\Desktop\ВУЗ no shkola\прога\HW-25\x64\Debug\HW-25.exe
